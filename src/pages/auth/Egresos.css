@@ -1,0 +1,191 @@
+/* --- Estilo para el contenedor principal --- */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #002366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 100px;
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+.profile p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* --- Estilo para el menú de navegación --- */
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #003580;
+    color: #FFFFFF;
+}
+
+/* --- Estilo para el contenido principal --- */
+.main-content {
+    flex: 1;
+    background-color: #F1F1F1;
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #002855;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.report {
+    display: flex;
+    justify-content: center; /* Centra las secciones en la página */
+    margin-bottom: 20px;
+    gap: 20px; /* Espacio entre las secciones */
+}
+
+/* --- Estilo para las secciones --- */
+.section {
+    background-color: white;
+    border: 1px solid #002855;
+    padding: 20px;
+    width: 45%; /* Ancho de las secciones */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Alinea el contenido dentro de cada sección */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.section h2 {
+    color: #002855;
+    margin-bottom: 10px;
+}
+
+/* --- Centrado específico para la sección de Descargar Factura --- */
+.descargar-factura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #002855;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.download-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.download-icons img {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.download-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Estilo para las facturas y los gastos --- */
+.factura, .gasto {
+    background-color: #ffffff;
+    border: 1px solid #002855; /* Borde que da la apariencia de un cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 20px 0; /* Margen superior e inferior */
+    width: 100%;
+    max-width: 600px; /* Limita el tamaño máximo del cuadro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.factura h2, .gasto h2 {
+    color: #002855;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.factura p, .gasto p {
+    font-size: 1em;
+    color: #333333;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.factura .detalle, .gasto .detalle {
+    border-top: 1px solid #002855; /* Línea divisoria para separar detalles */
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.factura .detalle p, .gasto .detalle p {
+    font-size: 0.9em;
+    color: #555555;
+    margin: 4px 0;
+}
+
+/* --- Botones de acción --- */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #002855;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #003580;
+    opacity: 0.8;
+}

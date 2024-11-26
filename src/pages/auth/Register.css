@@ -1,0 +1,117 @@
+.factura-pro {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #002366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #003366;
+    font-size: 36px;
+}
+
+.input-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.horizontal-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.horizontal-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+}
+
+.horizontal-form input,
+.horizontal-form select {
+    padding: 8px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.register-btn,
+.cancel-btn {
+    background-color: #03A9F4;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.register-btn:hover,
+.cancel-btn:hover {
+    opacity: 0.8;
+}
+
+.results-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+}
+
+.logout-btn:hover {
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .horizontal-form label {
+        width: 100%;
+    }
+}
+

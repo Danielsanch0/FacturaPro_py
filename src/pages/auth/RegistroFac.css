@@ -1,0 +1,266 @@
+/* --- Clases principales --- */
+
+.factura-pro {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    flex-direction: row;
+}
+/* Estilos para el contenedor de la lista de facturas */
+.results-container {
+    margin-top: 20px;
+}
+
+/* Estilo para la cuadrícula de las facturas */
+.factura-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+/* Estilo para cada item de factura */
+.factura-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.factura-item div {
+    margin-bottom: 10px;
+}
+
+.factura-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #002366;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.factura-item button:hover {
+    background-color: #002366;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #002366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    width: 180px;
+    height: 100px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-icon span {
+    font-size: 50px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.sidebar nav ul li:hover {
+    background-color: #003580;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #003366;
+    font-size: 36px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-btn {
+    background-color: #03A9F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn:hover, .cancel-btn:hover {
+    opacity: 0.8;
+}
+
+/* --- Media Queries para Responsividad --- */
+
+/* Tablets (hasta 768px) */
+@media (max-width: 768px) {
+    .factura-pro {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar nav ul li {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    input,
+    select {
+        padding: 8px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .register-btn, .cancel-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: none; /
+    }
+
+    .factura-pro {
+        padding: 0;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .register-btn, .cancel-btn {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .logout-btn {
+        position: absolute;
+        top: 20px; 
+        right: 20px; 
+        background-color: transparent;
+        border: none;
+        color: #333;
+        font-size: 48px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+      
+      .logout-btn:hover {
+        color: #f44336; 
+      }
+      
+      
+      
+}

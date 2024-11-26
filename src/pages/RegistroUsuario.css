@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #F6F7F8, #003366); /* Fondo similar al de login */
+}
+
+.register-form {
+    background-color: #003366; /* Fondo del formulario */
+    border-radius: 10px;
+    padding: 2.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register-form img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-form h2 {
+    color: #F6F7F8;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Estilos de los inputs */
+.register-form label {
+    color: #F6F7F8;
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.register-form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5rem; /* Bordes redondeados */
+    font-size: 1rem;
+    outline: none;
+}
+
+.register-form input:focus {
+    border-color: #03A9F4;
+    box-shadow: 0 0 0 3px rgba(21, 87, 192, 0.5);
+}
+
+/* Enlace de la página */
+.register-form a {
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #F6F7F8;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+.register-form a:hover {
+    color: #03A9F4;
+}
+
+.register-form button {
+    width: 100%;
+    background-color: #03A9F4;
+    color: #F6F7F8;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    border: none;
+}
+
+.register-form button:hover {
+    background-color: #3ab7f1; 
+}
+
+  
