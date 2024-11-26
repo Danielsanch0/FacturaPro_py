@@ -3,5 +3,6 @@ import preact from '@preact/preset-vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/FacturaPro_web/', // Configura el nombre del repositorio como base
   plugins: [preact()],
 })
